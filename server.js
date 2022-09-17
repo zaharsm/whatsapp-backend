@@ -10,6 +10,7 @@ import Pusher from "pusher";
 //app config
 const app = express();
 const port = process.env.PORT || 9000;
+
 //pusher
 
 const pusher = new Pusher({
@@ -56,7 +57,7 @@ app.use((req,res,next) => {
 
 //DB config
 const password = process.env.PASSWORD;
-const connection_url="mongodb+srv://admin-zahar:KDYnpUCYBZ77NyBu@cluster0.kye6xho.mongodb.net/whatsappDB?retryWrites=true&w=majority";
+const connection_url="mongodb+srv://admin-zahar:"+password+"@cluster0.kye6xho.mongodb.net/whatsappDB?retryWrites=true&w=majority";
 
 
 mongoose.connect(connection_url,{useUnifiedTopology: true});
