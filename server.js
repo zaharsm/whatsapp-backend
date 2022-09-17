@@ -57,7 +57,7 @@ app.use((req,res,next) => {
 
 //DB config
 const password = process.env.PASSWORD;
-const connection_url="mongodb+srv://admin-1:"+password+"@cluster0.kye6xho.mongodb.net/whatsappDB?retryWrites=true&w=majority";
+const connection_url="mongodb+srv://admin-1:"+password+"@cluster0.kye6xho.mongodb.net/whatsappDB";
 
 mongoose.connect(connection_url,{useUnifiedTopology: true});
 //?????
