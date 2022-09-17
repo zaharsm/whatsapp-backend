@@ -9,8 +9,8 @@
   },
   "author": "zahar",
   "license": "ISC",
-  "engines":{
-    "node":"16.16.0"
+  "engines": {
+    "node": "16.x"
   },
   "dependencies": {
     "cors": "^2.8.5",
