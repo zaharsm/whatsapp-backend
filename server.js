@@ -9,7 +9,7 @@ import cors from "cors";
 
 //app config
 const app = express();
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 3000;
 
 //pusher
 
@@ -45,8 +45,6 @@ const pusher = new Pusher({
         }   
   })
  })
-
-
 
 //middleware
 app.use(express.json());
