@@ -9,7 +9,7 @@ import cors from "cors";
 
 //app config
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8010;
 
 //pusher
 
@@ -24,7 +24,7 @@ const pusher = new Pusher({
   const db = mongoose.connection;
 
   db.once("open", ()=>{
-  console.log("DB connected");
+//   console.log("DB connected");
   const msgCollection = db.collection("messagecontents");
 
   const changeStream = msgCollection.watch();
